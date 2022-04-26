@@ -1,0 +1,634 @@
+html {
+    background-color: #faaeba;
+}
+
+header {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+h1 {
+    margin: 10px 0px;
+}
+
+
+nav ul {
+    border: 2px 0px solid #ffffff;
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    align-items: baseline;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+   /* Index */
+.index-img {
+    width: 100%;
+    height: 400px;
+}
+
+.index-footer {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+/* Reserva */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    column-gap: 2rem;
+    row-gap: 1rem;
+    border: 1px solid #ffffff;
+    justify-items: center;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.reserva {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    margin-top: 0px;
+}
+
+.diseno-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    border: 1px solid #ffffff;
+    padding: 15px;
+}
+
+.enviar{
+    margin: 10px;
+}
+
+.footer-reserva {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    margin-top: 40px;
+}
+
+/* Portfolio */
+.portfolio-img {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    row-gap: 1rem;  
+}
+
+.img1 {
+    order: 1;
+    border: 2px solid #ffffff;
+    margin-top: 20px;
+}
+
+.img2 {
+    order: 5;
+    border: 2px solid #ffffff;
+    margin-top: 20px;
+}
+
+.img3 {
+    order: 4;
+    border: 2px solid #ffffff;
+    margin-top: 20px;
+}
+
+.img4 {
+    order: 2;
+    border: 2px solid #ffffff;
+    margin-top: 20px;
+}
+
+.img5 {
+    order: 3;
+    border: 2px solid #ffffff;
+    margin-top: 20px;
+}
+
+.footer-portfolio {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    margin-top: 164px;
+}
+
+/* Lugar */
+.completo-main {
+    display: flex;
+    flex-direction: row;
+}
+
+.lugar-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.lugar-img { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ubi {
+    text-decoration: underline;
+}
+
+.img1l {
+    height: 200px;
+    width: auto;
+    margin: 4px;
+}
+
+.img2l {
+    height: 200px;
+    width: auto;
+    margin: 3px;
+}
+
+.img3l {
+    height: 200px;
+    width: auto;
+    margin: 3px;
+}
+
+.img4l {
+    height: 200px;
+    width: auto;
+    margin: 4px;
+}
+
+.footer-lugar {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    padding: 0px;
+}
+
+/* Contacto */
+.contacto-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+span {
+    text-decoration: 2px underline;
+}
+
+.instagram {
+    border: 2px solid white;
+    padding: 0px 94px 15px;
+    margin-bottom: 5px;
+}
+
+.whatsapp {
+    border: 2px solid white;
+    padding: 0px 94px 15px;
+}
+
+.redes {
+    display: block;
+}
+
+.contactar {
+    background-color: rosybrown;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    margin-top: 10px;
+}
+.ingreso{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.contacto1 {
+    margin: 10px;
+    padding: 0px 0px;
+}
+
+.contacto2 {
+    margin: 10px;
+    padding: 0px 0px;
+}
+
+.contacto3 {
+    margin: 10px;
+}
+
+.contacto {
+    margin: 10px;
+}
+
+.titulocontacto {
+    text-decoration: underline;
+}
+
+.footer-contacto {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+
+/* Vista en Mobile 320px */
+
+/* Index */
+@media screen and (min-width: 320px) {
+    .index-img {
+        width: 100%;
+        height: auto;
+        margin-top: 25px;
+    }
+
+    .index-footer {
+        margin-top: 185px;
+    }
+}
+
+/* Reserva */
+@media screen and (min-width: 320px) {
+    .grid {
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
+        font-size: 14px;
+        margin: 5px;
+        padding: 5px;
+    
+    }
+
+    .semana {
+        margin: 5px 0px;
+    }
+
+    .diseno-img{
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+    .footer-reserva {
+        margin-top: 10px;
+    }
+}
+
+/* Portfolio */
+@media screen and (min-width: 320px) {
+    .portfolio-img {
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img1 {
+        height: 120px;
+    }
+
+    .img2 {
+        height: 120px;
+    }
+
+    .img3 {
+        height: 120px;
+    }
+
+    .img4 {
+        height: 120px;
+    }
+
+    .img5 {
+        height: 120px;
+    }
+
+    .footer-portfolio {
+        margin-top: 220px;
+    }
+}
+
+/* Lugar */
+@media screen and (min-width: 320px) {
+    .completo-main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lugar-main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lugar-img {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .mapa {
+        width: 290px;
+        height: 175px;
+    }
+
+    .ubi {
+        font-size: medium;
+    }
+
+    .lugar-img {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+/* Contacto */
+@media screen and (min-width: 320px) {
+    
+    .contacto-main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactar {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: flex-end;
+    }
+
+    .contacto1 {
+        display: inline-block;
+    }
+
+    .contacto2 {
+        display: inline-block;
+    }
+
+    .contacto3 {
+        text-align: center;
+    }
+
+    .footer-contacto {
+        margin-top: auto;
+    }
+}
+
+/* General */
+@media screen and (min-width: 320px) {
+    nav ul li {
+        margin: 5px 4px;
+        font-size: small;
+    }
+}
+
+
+/* Vista mobile 375px */
+
+/* Index */
+@media screen and (min-width: 375px) {
+    .index-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .index-footer {
+        margin-top: 150px;
+    }
+}
+
+
+/* Vista mobile 425px */
+
+/* Index */
+@media screen and (min-width: 425px) {
+    .index-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .index-footer {
+        margin-top: 135px;
+    }
+}
+
+/* Portfolio */
+
+@media screen and (min-width: 425px) {
+    .portfolio-img {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Lugar */
+@media screen and (min-width: 425px) {
+    .mapa {
+        width: 360px;
+        height: 185px;
+    }
+}
+
+
+/* Vista en Tablet 768px */
+
+/* Index */
+@media screen and (min-width: 768px) {
+    .index-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .index-footer {
+        margin-top: 25px;
+    }
+}
+
+/* Reserva */
+@media screen and (min-width: 768px) {
+    .grid {
+        column-gap: 0.5rem;
+        row-gap: 0.2rem;
+    }
+}
+
+/* Portfolio */
+@media screen and (min-width: 768px) {
+    .portfolio-img {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .img1 {
+        height: 180px;
+    }
+
+    .img2 {
+        height: 180px;
+    }
+
+    .img3 {
+        height: 180px;
+    }
+
+    .img4 {
+        height: 180px;
+    }
+
+    .img5 {
+        height: 180px;
+    }
+    
+    .footer-portfolio {
+        margin-top: 50px;
+    }
+}
+
+/* Lugar */
+@media screen and (min-width: 768px) {
+    .mapa {
+        width: 490px;
+        height: 175px;
+    }
+}
+
+/* Contacto */
+@media screen and (min-width: 768px) {
+    .contactar {
+        padding: 10px 50px;
+    }
+}
+
+/* General */
+@media screen and (min-width: 768px) {
+    nav ul li {
+        font-size: medium;
+    }
+}
+
+
+/* Vista en Laptop 1024px */
+
+/* Index */
+@media screen and (min-width: 1024px) {
+    .index-img {
+        margin-top: 0px;
+        width: 100%;
+        height: auto;
+    }
+
+    .index-footer {
+        margin-top: 0px;
+    }
+}
+
+/* Reserva */
+@media screen and (min-width: 1024px) {
+    .grid {
+        column-gap: 0.8rem;
+        row-gap: 0.3;
+        font-size: 18px;
+    }
+
+    .diseno-img{
+        margin-top: 10px;
+        padding: 5px 10px;
+    }
+}
+
+/* Portfolio */
+
+@media screen and (min-width: 1024px) {
+    .portfolio-img {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+
+/* Lugar */
+@media screen and (min-width: 1024px) {
+    .completo-main {
+        flex-direction: row;
+    }
+
+    .lugar-main {
+        flex-direction: column;
+    }
+
+    .lugar-img {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .mapa {
+        width: 550px;
+        height: 320px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .ubi {
+        font-size: x-large;
+    }
+
+    .footer-lugar {
+        margin-top: 0px;
+    }
+}
+
+/* Contacto */
+@media screen and (min-width: 1024px) {
+    .contacto-main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .redes {
+        display: block;
+    }
+
+    .whatsapp {
+        margin-top: 20px;
+    }
+}
+
+/* General */
+@media screen and (min-width: 1024px) {
+    nav ul li {
+        font-size: large;
+    }
+}
