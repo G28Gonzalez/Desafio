@@ -19,7 +19,6 @@ h1 {
     margin: 10px 0px;
 }
 
-
 nav ul {
     border: 2px 0px solid #ffffff;
     list-style-type: none;
@@ -44,7 +43,6 @@ li {
 }
 
 li:hover {
-    padding: 0px 5px;
     background-color: #2521fc98;
 }
 
