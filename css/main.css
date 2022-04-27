@@ -40,11 +40,10 @@ nav ul li {
 }
 
 li {
-    width: auto; height: auto;
     transition: all 2s;       
 }
+
 li:hover {
-    height: auto; width: auto;
     padding: 0px 5px;
     background-color: #2521fc98;
 }
