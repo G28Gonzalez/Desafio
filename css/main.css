@@ -119,49 +119,27 @@ footer {
 }
 
 /* Portfolio */
-/* .portfolio-img {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    height: 250px;
+.carousel {
+    display: flex;
+    padding-top: 20px;
+}
+
+.carousel-inner {
+    display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 2rem;
-    row-gap: 1rem;  
 }
 
-.img1 {
-    order: 1;
-    border: 2px solid #ffffff;
+.carousel-control-prev {
     margin-top: 20px;
 }
 
-.img2 {
-    order: 5;
-    border: 2px solid #ffffff;
+.carousel-control-next {
     margin-top: 20px;
 }
 
-.img3 {
-    order: 4;
-    border: 2px solid #ffffff;
-    margin-top: 20px;
-}
-
-.img4 {
-    order: 2;
-    border: 2px solid #ffffff;
-    margin-top: 20px;
-}
-
-.img5 {
-    order: 3;
-    border: 2px solid #ffffff;
-    margin-top: 20px;
-} */
 .d-block {
-    height: 300px;
-    width: auto;
+    height: 400px;
 }
 
 .footer-portfolio {
