@@ -119,6 +119,19 @@ footer {
 }
 
 /* Portfolio */
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 50%;
+    max-height: 400px;
+    /* margin-right: -100%; */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .6s ease-in-out;
+}
+
+
 .carousel {
     display: flex;
     padding-top: 20px;
