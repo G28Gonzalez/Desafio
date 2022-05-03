@@ -1,3 +1,4 @@
+/* Estilos para todos los html */
 html {
     background-color: #faaeba;
 }
@@ -66,13 +67,6 @@ footer {
     height: auto;
 }
 
-.index-footer {
-    display: flex;
-    justify-content: center;
-    text-decoration: underline;
-    margin-top: 0px;
-}
-
 /* Reserva */
 .semana {
     padding-top: 5px;
@@ -112,12 +106,6 @@ footer {
     margin: 10px;
 }
 
-.footer-reserva {
-    display: flex;
-    justify-content: center;
-    text-decoration: underline;
-}
-
 /* Portfolio */
 .carousel-item {
     position: relative;
@@ -125,7 +113,6 @@ footer {
     float: left;
     width: 50%;
     max-height: 400px;
-    /* margin-right: -100%; */
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: transform .6s ease-in-out;
@@ -155,12 +142,6 @@ footer {
     height: 400px;
 }
 
-.footer-portfolio {
-    display: flex;
-    justify-content: center;
-    text-decoration: underline;
-}
-
 /* Lugar */
 .completo-main {
     display: flex;
@@ -176,6 +157,11 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.simbolo-ubi{
+    display: flex;
+    padding-top: 10px;
 }
 
 .ubi {
@@ -206,12 +192,6 @@ footer {
     margin: 4px;
 }
 
-.footer-lugar {
-    display: flex;
-    justify-content: center;
-    text-decoration: underline;
-}
-
 /* Contacto */
 .contacto-main {
     display: flex;
@@ -227,11 +207,17 @@ span {
     border: 2px solid white;
     padding: 0px 94px 15px;
     margin-bottom: 5px;
+    background-color: #bc8f8f;
 }
 
 .whatsapp {
     border: 2px solid white;
     padding: 0px 94px 15px;
+    background-color: #bc8f8f;
+}
+
+.color-href {
+    color: black;
 }
 
 .redes {
@@ -240,8 +226,8 @@ span {
 
 .contactar {
     background-color: rosybrown;
-    border: 1px solid #ffffff;
-    padding: 10px;
+    border: 2px solid #ffffff;
+    padding: 10px 37px;
     margin-top: 10px;
 }
 .ingreso{
@@ -252,16 +238,19 @@ span {
 }
 
 .contacto1 {
+    display: contents;
     margin: 10px;
     padding: 0px 0px;
 }
 
 .contacto2 {
+    display: contents;
     margin: 10px;
     padding: 0px 0px;
 }
 
 .contacto3 {
+    display: contents;
     margin: 10px;
 }
 
@@ -269,16 +258,14 @@ span {
     margin: 10px;
 }
 
+.textarea-height {
+    height: 195px;
+}
+
+
 .titulocontacto {
     text-decoration: underline;
 }
-
-.footer-contacto {
-    display: flex;
-    justify-content: center;
-    text-decoration: underline;
-}
-
 
 /* Vista en Mobile 320px */
 
@@ -312,35 +299,6 @@ span {
     }
 }
 
-/* Portfolio */
-@media screen and (min-width: 320px) {
-    .portfolio-img {
-        justify-content: center;
-        align-items: center;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .img1 {
-        height: 120px;
-    }
-
-    .img2 {
-        height: 120px;
-    }
-
-    .img3 {
-        height: 120px;
-    }
-
-    .img4 {
-        height: 120px;
-    }
-
-    .img5 {
-        height: 120px;
-    }
-}
-
 /* Lugar */
 @media screen and (min-width: 320px) {
     .completo-main {
@@ -365,6 +323,7 @@ span {
     .mapa {
         width: 290px;
         height: 175px;
+        margin-top: 10px;
     }
 
     .ubi {
@@ -393,12 +352,8 @@ span {
         align-items: flex-end;
     }
 
-    .contacto1 {
-        display: inline-block;
-    }
-
-    .contacto2 {
-        display: inline-block;
+    .redes {
+        padding-top: 5px;
     }
 
     .contacto3 {
@@ -406,41 +361,7 @@ span {
     }
 }
 
-/* General */
-@media screen and (min-width: 320px) {
-    nav ul li {
-        margin: 5px 4px;
-        font-size: small;
-    }
-}
-
-
-/* Vista mobile 375px */
-
-/* Index */
-@media screen and (min-width: 375px) {
-    .index-img {
-        width: 100%;
-        height: auto;
-    }
-}
 /* Vista mobile 425px */
-
-/* Index */
-@media screen and (min-width: 425px) {
-    .index-img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-/* Portfolio */
-
-@media screen and (min-width: 425px) {
-    .portfolio-img {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
 
 /* Lugar */
 @media screen and (min-width: 425px) {
@@ -469,33 +390,6 @@ span {
     }
 }
 
-/* Portfolio */
-@media screen and (min-width: 768px) {
-    .portfolio-img {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .img1 {
-        height: 180px;
-    }
-
-    .img2 {
-        height: 180px;
-    }
-
-    .img3 {
-        height: 180px;
-    }
-
-    .img4 {
-        height: 180px;
-    }
-
-    .img5 {
-        height: 180px;
-    }
-}
-
 /* Lugar */
 @media screen and (min-width: 768px) {
     .mapa {
@@ -503,21 +397,6 @@ span {
         height: 175px;
     }
 }
-
-/* Contacto */
-@media screen and (min-width: 768px) {
-    .contactar {
-        padding: 10px 50px;
-    }
-}
-
-/* General */
-@media screen and (min-width: 768px) {
-    nav ul li {
-        font-size: medium;
-    }
-}
-
 
 /* Vista en Laptop 1024px */
 
@@ -543,15 +422,6 @@ span {
         padding: 5px 10px;
     }
 }
-
-/* Portfolio */
-
-@media screen and (min-width: 1024px) {
-    .portfolio-img {
-        grid-template-columns: repeat(5, 1fr);
-    }
-}
-
 
 /* Lugar */
 @media screen and (min-width: 1024px) {
@@ -594,12 +464,5 @@ span {
 
     .whatsapp {
         margin-top: 20px;
-    }
-}
-
-/* General */
-@media screen and (min-width: 1024px) {
-    nav ul li {
-        font-size: large;
     }
 }
